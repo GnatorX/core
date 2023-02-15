@@ -149,3 +149,7 @@ pyOpenSSL>=23.0.0
 # virtualenv 20.18 only compatible with <3
 # https://github.com/pypa/virtualenv/issues/2499
 platformdirs<3
+
+# The get-mac package has been replaced with getmac. Installing get-mac alongside getmac
+# breaks getmac due to them both sharing the same python package name inside 'getmac'.
+get-mac<0.0.0
