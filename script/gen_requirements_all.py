@@ -157,6 +157,10 @@ pyOpenSSL>=23.0.0
 # uamqp newer versions we currently can't build for armv7/armhf
 # Limit this to Python 3.10, to not block Python 3.11 dev for now
 uamqp==1.6.0;python_version<'3.11'
+
+# The get-mac package has been replaced with getmac. Installing get-mac alongside getmac
+# breaks getmac due to them both sharing the same python package name inside 'getmac'.
+get-mac<0.0.0
 """
 
 IGNORE_PRE_COMMIT_HOOK_ID = (
