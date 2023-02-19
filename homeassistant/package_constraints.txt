@@ -152,4 +152,4 @@ uamqp==1.6.0;python_version<'3.11'
 
 # The get-mac package has been replaced with getmac. Installing get-mac alongside getmac
 # breaks getmac due to them both sharing the same python package name inside 'getmac'.
-get-mac<0.0.0
+get-mac==1000000000.0.0
